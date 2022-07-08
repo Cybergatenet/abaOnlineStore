@@ -1,0 +1,17 @@
+:root{
+    --text-color: #888;
+    --cart-font-fam: roboto;
+    --cart-p-font: 0.4em;
+}
+
+.CartComponent p{
+    line-height: 15px;
+    color: var(--text-color);
+    margin: 0.6em 0!important;
+    font-family: var(--cart-font-fam);
+    font-size: var(--cart-p-font)!important;
+}
+
+.product, .details{
+    width: 100%;
+}

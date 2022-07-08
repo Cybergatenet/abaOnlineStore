@@ -1,0 +1,23 @@
+:root{
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --view-font-fam: roboto;
+    --view-p-font: 0.8em;
+    --white: #fff;
+}
+
+.product-view{
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.product-view .category{
+    text-transform: capitalize;
+    font-size: var(--view-p-font);
+    font-family: var(--view-font-fam);
+}
+
+
+

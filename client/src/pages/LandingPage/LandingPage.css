@@ -1,0 +1,34 @@
+:root{
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --cart-font-fam: roboto;
+    --cart-p-font: 0.4em;
+    --white: #fff;
+}
+
+.landingPage{
+    padding: 5rem 0;
+}
+
+.products{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.landingPage .products::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 10px;
+}
+
+.landingPage .products::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    background: var(--text-color);
+}
+
+.landingPage .products::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--main-bg-color);
+}

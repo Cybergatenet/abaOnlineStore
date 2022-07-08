@@ -1,0 +1,67 @@
+:root{
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --cart-font-fam: roboto;
+    --cart-p-font: 0.4em;
+}
+
+.selected-products p{
+    line-height: 15px;
+    color: var(--text-color);
+    margin: 0.6em 0!important;
+    font-family: var(--cart-font-fam);
+}
+
+
+.selected-products .product .product-img,
+.selected-products .product .product-name{
+    width: 50%;
+}
+
+.selected-products .product .product-img img{
+    width: 100%;
+}
+
+.selected-products .product .name
+{
+    text-transform: capitalize;
+    color: var(--color);
+}
+
+.product-desc {
+    overflow-x: hidden;
+}
+
+.product-desc p{
+    margin: 0!important;
+    padding: 0!important;
+    line-height: 20px!important;
+    font-size: var(--cart-p-font);
+    font-family: var(--cart-font-fam);
+}
+
+/* ACTION CONTAINER STYLING  */
+.action-container .delete p{
+    color: var(--bg-color-light);
+}
+
+.action-container .delete p:hover{
+    text-decoration: underline;
+}
+
+.action-container .quantity button{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+/* .quantity .counter{
+    font-size: 1em!important;
+} */
+
+.action-container .quantity{
+    font-size: var(--cart-p-font);
+    font-family: var(--cart-font-fam);
+}

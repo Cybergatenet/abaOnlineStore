@@ -1,0 +1,16 @@
+:root{
+    --modal-font-fam: roboto;
+    --modal-p-font: 0.4em;
+    --white: #fff;
+}
+  
+
+.verification{
+    width: 400px;
+    margin: 6% auto;
+    max-width: 100%;
+    border-radius: 10px;
+    background: var(--white);
+    font-size: var(--modal-p-font);
+    font-family: var(--modal-font-fam);
+  }

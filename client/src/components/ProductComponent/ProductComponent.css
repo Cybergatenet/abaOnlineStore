@@ -1,0 +1,57 @@
+:root{
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --home-font-fam: roboto;
+    --home-p-font: 0.4em;
+}
+
+.ProductComponent{
+    cursor: pointer;
+    transition: 1s;
+    font-size: var(--home-p-font);
+    font-family: var(--home-font-fam);
+}
+
+.ProductComponent:hover{
+    transform: scale(0.9);
+}
+
+.ProductComponent p{
+    margin: 0.5em 0!important;
+}
+
+.ProductComponent .home-product .img-container{
+    height: 28vh;
+    position: relative;
+}
+
+.ProductComponent .home-product .img-container img{
+    height: 100%;
+}
+
+.ProductComponent .home-product-details .desc{
+    height: 20vh;
+    overflow: hidden;
+}
+
+.ProductComponent .home-product-details .name{
+    text-transform: capitalize;
+}
+
+/* .ProductComponent .home-product-details Button{
+    width: 100%;
+    font-size: 1em;
+    padding: 0.8em 0;
+    border-radius: 3px;
+    text-transform: capitalize;
+} */
+
+
+
+@media(max-width: 767px){
+    .ProductComponent .home-product-details .desc{
+        height: 14vh;
+    }
+}

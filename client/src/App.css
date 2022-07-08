@@ -1,0 +1,25 @@
+:root{
+    --btn-hover-bg: #0a07bb; 
+    --btn-bg: #090685; 
+}
+
+
+body p{
+    font-size: 1em!important;
+}
+
+
+Button{
+    border: 0;
+    padding: 0.3rem;
+    border-radius: 0;
+    font-size: 0.5em;
+    transition: 0.3s;
+    color: var(--white);
+    background: var(--btn-bg);
+}
+
+Button:hover{
+    color: var(--white);
+    background: var(--btn-hover-bg);
+}

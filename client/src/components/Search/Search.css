@@ -1,0 +1,32 @@
+:root{
+    --font-fam: roboto;
+    --search-font: 0.4em;
+}
+
+.search .container input{
+    /* width: 50%; */
+    /* margin: -50px 0!important; */
+    background: transparent;
+    border-radius: 50px;
+    font-size: var(--search-font);
+    font-family: var(--font-fam);
+}
+
+/* .search Button{
+    border-radius: 0!important;
+    background: var(--color);
+    padding: 0.87em 1em!important;
+    font-family: var(--font-fam);
+} */
+
+.categories p{
+    font-family: var(--font-fam)!important;
+    font-size: 0.4em!important;
+}
+
+
+@media(max-width: 1002px){
+    .search .container input{
+        width: 80%;
+    }
+}

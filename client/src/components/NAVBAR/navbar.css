@@ -1,0 +1,108 @@
+:root{
+    --white: #fff;
+    --color: #030e12;
+    --bg-color: #bb0740;
+    --bg-color-light: #ff2d70;
+    /* --bg-color-main: #090685; */
+    
+    --shadow-dark-color: #d3dae7;
+    --red: #ff0000;
+    --btn-bg: #0a07bb; 
+    --btn-hover-bg: #090685; 
+
+    /* --yellow: #b69307; */
+    /* --blue: #5bccf6; */
+    /* --thick-blue: #37c0f1; */
+    /* --main-bg-color: #ecf0f3; */
+    /* --light-yellow: #f7c606; */
+    /* --main-yellow: #d1a806; */
+    /* --main-yellow: #c7a005; */
+    /* --font: Lapidary333 BT; */
+
+}
+
+body{
+    font-size: 2em;
+}
+
+
+/* NavBar styling  */
+header{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+.Menu .logo h1{
+    font-family: roboto;
+    font-size: 0.7em;
+    color: var(--bg-color-main);
+}
+
+/* .Menu .logo h1::first-letter{ */
+h1::first-letter{
+    color: var(--red);
+    font-size: 1.8em;
+ }
+
+.Menu .navlink{
+    transition: 0.5s;
+    font-size: 0.4em;
+    position: relative;
+    font-family: roboto;
+    text-decoration: none;
+}
+
+.Menu  nav .login{
+    color: var(--white)!important;
+    background: var(--btn-bg);
+}
+
+.Menu  nav .login:hover{
+    color: var(--white)!important;
+    background: var(--btn-hover-bg);
+}
+
+.Menu .navlink{
+    color: #000!important;
+}
+
+.Menu .navlink:hover{
+    transform: scale(1.3);
+    color: var(--btn-hover-bg)!important;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+
+
+@media(max-width: 1206px) {
+    .menu-icon{
+        display: block;
+    }
+
+    .nav{
+        right: 0%;
+        top: 100%;
+        width: 70%;
+        transition: 0.5s;
+        position: absolute;
+        background: var(--color);
+        flex-direction: column!important;
+        align-items: flex-start!important;
+    }
+
+    nav.hide{
+        right: -100%;
+    }
+    
+    .Menu .navlink{
+        font-size: 0.7em;
+        margin: 0.6em 1em!important;
+    }
+    
+}

@@ -1,0 +1,53 @@
+:root{
+  --bg-color-light: #ff2d70;
+  --shadow-dark-color: #d3dae7;
+  --main-bg-color: #ecf0f3;
+  --text: #555;
+  --bg-color-main: #090685;
+  --account-font-fam: roboto;
+  --account-p-font: 0.4em;
+  --font: Lapidary333 BT;
+  --white: #fff;
+}
+
+.account{
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+}
+
+.form-container{
+  width: 400px;
+  margin: 6% auto;
+  max-width: 100%;
+  border-radius: 10px;
+  background: var(--white);
+  font-size: var(--account-p-font);
+  font-family: var(--account-font-fam);
+}
+
+
+.login-form, .signup-form{
+  width: 100%;
+}
+
+.login-form h3, .signup-form h3{
+  font-family: var(--font);
+}
+
+p{
+  color: var(--text);
+}
+
+.form-container .form-control{
+  width: 100%;
+  background: transparent;
+}
+
+
+
+/* VERIFICATION STYLING  */
+/* .verification table th{
+  text-align: center;
+  padding: 1em 0!important;
+} */

@@ -1,0 +1,28 @@
+
+.jumbotronStyle {
+    padding: 5rem 0;
+    background: var(--bg-color);    
+}
+
+.desc {
+    max-width: 600px;
+}
+
+.textStyle {
+    font-family: Calligraph421 BT;
+    font-size: 1em!important;
+    font-size: 1em;
+    font-style: italic
+}
+
+.paraStyle {
+    color: #ccc;
+    max-width: 800px;
+    font-size: 0.9em;
+    line-height: 30px;
+    font-size: 0.5em!important;
+    font-family: var(--footer-font)!important;
+    font-style: italic;
+    /* font-family: Lapidary333 BT; */
+}
+

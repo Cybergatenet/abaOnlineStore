@@ -1,0 +1,19 @@
+:root{
+    --font-family: Lapidary333 BT;
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --title-font-fam: roboto;
+    --title-p-font: 0.4em;
+    --white: #fff;
+}
+
+.title{
+    font-size: var(--title-p-font);
+    font-family: var(--title-font-fam);
+}
+
+.title p:nth-child(1){
+    text-transform: capitalize;
+}

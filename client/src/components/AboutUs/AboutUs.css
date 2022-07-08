@@ -1,0 +1,54 @@
+:root{
+    --bg-color-light: #ff2d70;
+    --shadow-dark-color: #d3dae7;
+    --main-bg-color: #ecf0f3;
+    --text-color: #888;
+    --about-font-fam: roboto;
+    --about-p-font: 0.4em;
+    --black: #000;
+    --red: #ff0000;
+}
+
+.About{
+    width: 800px;
+    max-width: 100%;
+    line-height: 23px;
+    text-align: justify;
+    font-size: var(--about-p-font);
+    font-family: var(--about-font-fam);
+}
+
+.About h1{
+    font-size: 2.5em;
+}
+
+.About h1::first-letter{
+    color: var(--red);
+    font-size: 1.5em;
+}
+
+.main-height{
+    height: 13vh;
+    overflow: hidden;
+}
+
+.add-height{
+    min-height: 13vh;
+}
+
+
+
+
+
+
+
+
+
+
+.read-more {
+   cursor: pointer;
+}
+
+.read-more p{
+   color: var(--black);
+}

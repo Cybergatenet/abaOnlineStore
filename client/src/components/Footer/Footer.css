@@ -1,0 +1,20 @@
+:root{
+    --footer-color: #555;
+    --footer-bg: #000;
+    --footer-font-fam: roboto;
+    --footer-p-font: 0.4em;
+}
+
+.Footer{
+    width: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--footer-color);
+    background: var(--footer-bg);
+    font-size: var(--footer-p-font);
+    font-family: var(--footer-font-fam);
+}
+
+.Footer .top{
+    background: #111;
+}
