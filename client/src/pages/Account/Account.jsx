@@ -8,7 +8,7 @@ const { useState } = require("react")
 function Account() {
   const [account, setAccount] = useState(true)
 
-    function moveLogin() {
+    const moveLogin = () => {
       setAccount(!account)
       console.log("clicked")
     }
@@ -16,34 +16,49 @@ function Account() {
   return (
     <>
       <Navbar />
-      <div>Account</div>
+      {/* <div>Account</div> */}
     
       <div className="Account">
           
-          <div className="form-container py-3 px-3 shadow d-none">
-            {/* Login  */}
-            <form className='login-form px-3 py-5'>
-              <div className='pb-3'>
-                <h3>Login Up</h3>
-              </div>
-              <input type="text" className='form-control mt-2' placeholder='Name' />
-              <input type="text" className='form-control mt-2' placeholder='Password' />
+          <div className="form-container py-3 px-3 border shadow-sm">
 
-              <div className="btn btn-lg bg-primary btn-block mt-2 text-white">Login</div>
+            {/* BTN FOR SWITCHING FORM  */}
+            <div className="px-3">
+              <h3 className='indicatorBtn' onClick={moveLogin}>Click Here to Go to {!account ? "Login" : "Sign Up"}</h3>
+
+              <p className='text-danger'>We will Display any Error msg Here!.</p>
+            </div>
+
+            {/* Login  */}
+            <form className={!account ? "d-none" : "login-form px-3 py-5"}>
+              <div className='pb-3 px-3'>
+                <h5 className='text-right'>Login</h5>
+              </div>
+              <input type="text" className='form-control border-bottom my-3' placeholder='Name' />
+
+              <input type="text" className='form-control border-bottom my-4' placeholder='Password' />
+
+              <div className="btn btn-lg btn-block mt-5 text-white">Login</div>
+              
             </form>
 
             {/* Sign Up  */}
-            <form className='signup-form px-3 py-5'>
-              <div className='pb-3'>
-                <h3>Sign Up</h3>
+            <form className={!account ? 'signup-form px-3 py-5' : "d-none"}>
+
+              <div className='pb-3 px-3'>
+                <h5 className='text-right'>Sign Up</h5>
               </div>
 
-              <input type="text" className='form-control my-3' placeholder='Name' />
-              <input type="text" className='form-control my-3' placeholder='Email' />
-              <input type="text" className='form-control my-3' placeholder='Phone' />
-              <input type="text" className='form-control my-3' placeholder='Password' />
+              <input type="text" className='form-control border-bottom my-3' placeholder='Name' />
 
-              <div className="btn btn-lg bg-primary btn-block mt-2 text-white">Login</div>
+              <input type="text" className='form-control border-bottom my-3' placeholder='Email' />
+
+              <input type="text" className='form-control border-bottom my-3' placeholder='Phone' />
+
+              <input type="text" className='form-control border-bottom my-3' placeholder='Password' />
+
+              <div className="btn btn-lg btn-block mt-5 text-white">Sign Up</div>
+
             </form>
           </div>
       </div>

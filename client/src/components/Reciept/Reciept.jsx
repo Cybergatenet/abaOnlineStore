@@ -1,9 +1,9 @@
 import  "../../components/Reciept/Reciept.css"
 
-const Reciept = ({ buyerName, productName, qty, date, totalPrice, perPrice }) => {
+const Reciept = ({ buyerName, productName, qty, date, totalPrice, }) => {
   return (
     <>
-        <div className="Receipt py-3 position-relative ml-3">
+        <div className="Receipt position-relative ml-3 border">
             <div className="receipt-header text-center py-2">
                 <h1 className="receipt-title">Payment Receipt</h1>
             </div>
@@ -14,19 +14,17 @@ const Reciept = ({ buyerName, productName, qty, date, totalPrice, perPrice }) =>
                     <p>Payment Date: {date}</p>
                 </div>
 
-                <div className="d-flex justify-content-between py-3 px-1">
+                <div className="d-flex justify-content-between py-4 px-1">
                     <table className="table">
                         <tr className="d-flex justify-content-between px-1">
                             <th>Product Name</th>
                             <th>Qty</th>
-                            <th>Per/Price</th>
                             <th>Total Price</th>
                         </tr>
 
                         <tr className="d-flex justify-content-between px-1 mt-3">
                             <td>{productName}</td>
                             <td>{qty}</td>
-                            <td>{perPrice}</td>
                             <td>${totalPrice}</td>
                         </tr>
                     </table>

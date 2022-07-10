@@ -1,9 +1,4 @@
 :root{
-    --bg-color-light: #ff2d70;
-    --shadow-dark-color: #d3dae7;
-    --main-bg-color: #ecf0f3;
-    --text-color: #888;
-    --home-font-fam: roboto;
     --home-p-font: 0.4em;
 }
 
@@ -11,7 +6,6 @@
     cursor: pointer;
     transition: 1s;
     font-size: var(--home-p-font);
-    font-family: var(--home-font-fam);
 }
 
 .ProductComponent:hover{
@@ -40,13 +34,6 @@
     text-transform: capitalize;
 }
 
-/* .ProductComponent .home-product-details Button{
-    width: 100%;
-    font-size: 1em;
-    padding: 0.8em 0;
-    border-radius: 3px;
-    text-transform: capitalize;
-} */
 
 
 

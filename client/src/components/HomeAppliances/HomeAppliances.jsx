@@ -1,4 +1,3 @@
-import "../../components/HomeAppliances/HomeApplainces.css"
 import ProductComponent from "../../components/ProductComponent/ProductComponent"
 import Button from "../button/button";
 import { Link } from 'react-router-dom'
@@ -100,7 +99,7 @@ responsive: [
                     avaliableItems="52"
                   />
                   <div className="px-lg-5 px-4 d-flex justify-content-center">
-                    <Link to={`/cart/${item.product_id}`} className="btn btn-primary btn-sm">Add To Cart</Link> 
+                    <Link to={`/cart/${item.product_id}`} className="btn btn-sm">Add To Cart</Link> 
                   </div>
                 </div>
               ) 

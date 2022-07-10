@@ -4,13 +4,15 @@
   --main-bg-color: #ecf0f3;
   --text: #555;
   --bg-color-main: #090685;
-  --account-font-fam: roboto;
   --account-p-font: 0.4em;
   --font: Lapidary333 BT;
   --white: #fff;
+
+  --btn-bg: #0a07bb; 
+
 }
 
-.account{
+.Account{
   width: 100%;
   height: 100%;
   padding: 5rem 0;
@@ -23,7 +25,11 @@
   border-radius: 10px;
   background: var(--white);
   font-size: var(--account-p-font);
-  font-family: var(--account-font-fam);
+}
+
+.login-form h5, .signup-form h5, .indicatorBtn{
+  font-family: var(--font);
+  cursor: pointer;
 }
 
 
@@ -31,17 +37,24 @@
   width: 100%;
 }
 
-.login-form h3, .signup-form h3{
-  font-family: var(--font);
-}
-
-p{
-  color: var(--text);
-}
 
 .form-container .form-control{
   width: 100%;
   background: transparent;
+  border: none;
+}
+
+.form-container .btn{
+  border-radius: 0;
+  font-style: italic;
+  background: var(--btn-bg);
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+.form-container .btn:active{
+  letter-spacing: 3px;
+  border: 1px solid #e0e0e0;
 }
 
 

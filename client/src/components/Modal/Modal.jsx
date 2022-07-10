@@ -6,7 +6,7 @@ const Modal = ({ modalTitle, BlockedValue, DeletedValue, PhoneToVerify, PhoneVer
 
   return (
     <>
-      <div className="verification shadow px-3 py-5">
+      <div className="verification border px-3 py-5">
           <p className='text-center'>{modalTitle}</p>
           <div className="verify py-4">
             <span className='d-flex justify-content-between my-2'>

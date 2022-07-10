@@ -1,13 +1,8 @@
 :root{
-    --bg-color-light: #ff2d70;
-    --shadow-dark-color: #d3dae7;
-    --main-bg-color: #ecf0f3;
     --text-color: #888;
-    --cart-font-fam: roboto;
     --rgb: rgba(0, 0, 0, .1);
     --receipt-header-font: 0.8em;
     --receipt-th-font: 0.4em;
-    --white: #fff;
 }
 
 body{

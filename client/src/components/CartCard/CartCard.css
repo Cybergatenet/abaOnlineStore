@@ -57,10 +57,6 @@
     align-items: center;
 }
 
-/* .quantity .counter{
-    font-size: 1em!important;
-} */
-
 .action-container .quantity{
     font-size: var(--cart-p-font);
     font-family: var(--cart-font-fam);
