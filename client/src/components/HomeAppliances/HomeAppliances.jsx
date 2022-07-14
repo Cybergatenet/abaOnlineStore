@@ -1,7 +1,6 @@
-import "../../components/HomeAppliances/HomeApplainces.css"
 import ProductComponent from "../../components/ProductComponent/ProductComponent"
 import Button from "../button/button";
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 import photo1 from "../../components/product-images/iron.png"
 
@@ -31,6 +30,16 @@ const HomeAppliances = () => {
   useEffect(() => {
     fetchProducts()
   }, [])
+
+  // let location = useLocation()
+  // let navigation = useNavigate()
+
+  // const changeLocation = (e) => {
+  //   // console.log(e.target)
+  //   // location = `/cart/${e.target}`
+  //   // navigation = '/cart'
+  //   location.pathname = `/cart/${e.target}`
+  // }
 
 
   // SETTING UP THE MODLUE FOR SLIDE EFFECT 
@@ -100,7 +109,8 @@ responsive: [
                     avaliableItems="52"
                   />
                   <div className="px-lg-5 px-4 d-flex justify-content-center">
-                    <Link to={`/cart/${item.product_id}`} className="btn btn-primary btn-sm">Add To Cart</Link> 
+                    <Link to={`/cart/${item.product_id}`} className="btn btn-sm">Add To Cart</Link> 
+                    {/* <button onClick={changeLocation} className="btn btn-success">Add ++ </button> */}
                   </div>
                 </div>
               ) 

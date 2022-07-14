@@ -1,49 +1,52 @@
 import  "../../pages/Cart/Cart.css"
+import { useState, useEffect } from "react"
+import Axios from 'axios'
 import Navbar from "../../components/NAVBAR/navbar"
-import img from "../../asserts/imgs/tv2.jpg"
-import { useState } from "react"
+
 import Button from "../../components/button/button.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
-// import Axios from 'axios'
-// import { useEffect } from "react"
 import CartComponent from "../../components/CartComponent/CartComponent"
 import CartHeader from "../../components/CartTitleBar/CartHeader"
 
 
-
-
-
+import CardCard from "../../components/CartCard/CartCard"
 
 const Cart = () => {
-
-  // FUNCTION TO FETCH THE SELECTED PRODUCT FROM THE USER TO ADD IT TO CART 
-  // const [selected, setSelected] = useState()
+  const [loading, setLoading] = useState(true)
+  const [product, setProduct] = useState([])
 
   // useEffect(() => {
-  //   getProduct()
+  //   Axios.get('http://localhost:5000/api/product/3')
+  //   .then(products =>  {
+  //     setProduct(products.data)
+  //     setLoading(false)
+  //   })
+  //   .catch(err => console.log(err, "...there is an error"))
   // }, [])
 
-  // const getProduct = async () => {
-  //   const singlePorduct = await Axios.get("http://localhost:5000/api/cart") 
+  
 
-  //   setSelected(singlePorduct)
+  // console.log(product)
+  // if(loading){
+  //   setProduct('loading...')
   // }
-  // console.log(selected)
-
-
-
 
   // // FUNCTION TO CHOOSE QUANTITY 
-  let price = 5.699, totalPrice
-
-  const [count, setCount] = useState(1)
-  const minus = () => {
-    {
-      count > 1 ? setCount(count - 1) : count = 1
-    }
-  }
-  let total = totalPrice = price * count
  
+
+  const getProduct = async () => {
+    let item = await Axios.get("http://localhost:5000/api/product/3")
+
+    setProduct(item.data)
+  }
+
+  
+
+  useEffect(() => {
+    getProduct()
+
+  }, [])
+
 
   return (
     <>
@@ -53,8 +56,8 @@ const Cart = () => {
 
         {/* CART HEADER  */}
         <CartHeader 
-          TotalItems={1} 
-          TotalPrice={3000} 
+          TotalItems={'1'} 
+          TotalPrice={'3000'} 
         />
 
         <div className="cart">
@@ -62,22 +65,16 @@ const Cart = () => {
             <div className="row g-4">
 
               {/* RENDERING CART ITEMS HERE  */}
-              <div className="col-md-5">
-                <CartComponent 
-                  ProductImg={img} 
-                  ProductName={'24 inches television'} 
-                  Price={5000} 
-                  ProductDescription={'This is a decription text.'} 
-                />
-              </div>
-              <div className="col-md-5">
-                <CartComponent 
-                  ProductImg={img} 
-                  ProductName={'24 inches television'} 
-                  Price={5000} 
-                  ProductDescription={'This is a decription text'} 
-                />
-              </div>
+
+                {/* <div className="col-md-5">
+                      <CartComponent 
+                        ProductImg={`./img/${product_img}`} 
+                        ProductName={product[0].product_name} 
+                        Price={product[0].product_price} 
+                        ProductDescription={product[0].product_desc} 
+                      />
+                </div> */}
+
              
               {/* CHECKOUT BTN  */}
                 <div className="row mt-5 px-5">

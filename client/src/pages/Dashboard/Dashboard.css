@@ -1,0 +1,48 @@
+:root{
+    --white: #fff;
+    --btn-bg: #0a07bb; 
+    --main-bg-color: #ecf0f3;
+    --dashboard-p-font: 0.4em;
+}
+
+
+.Dashborad{
+    padding: 5rem 0;
+}
+
+h2{
+    font-size: var(--p-font)!important;
+}
+
+p{
+    font-size: var(--dashboard-p-font)!important;
+}
+
+.Dashborad .sideMenu {
+    top: 0;
+    width: 20vw;
+    position: fixed;
+    height: 100%;
+    z-index: 222;
+    background: var(--white);
+}
+
+.Dashborad .sideMenu ul{
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: var(--dashboard-p-font)!important;
+}
+
+.Dashborad .sideMenu ul li:hover{
+    color: var(--white);
+    background: var(--btn-bg);
+}
+
+
+
+.Dashborad .dashoardActivity{
+    width: 80vw;
+    right: 0;
+    top: 0;
+    position: absolute;
+}

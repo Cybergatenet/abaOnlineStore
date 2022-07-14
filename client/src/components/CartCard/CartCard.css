@@ -7,6 +7,11 @@
     --cart-p-font: 0.4em;
 }
 
+/* .selected-products{
+    height: 30vh;
+    position: relative;
+} */
+
 .selected-products p{
     line-height: 15px;
     color: var(--text-color);
@@ -14,6 +19,13 @@
     font-family: var(--cart-font-fam);
 }
 
+
+/* .selected-products .product{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
 
 .selected-products .product .product-img,
 .selected-products .product .product-name{
@@ -56,10 +68,6 @@
     display: flex;
     align-items: center;
 }
-
-/* .quantity .counter{
-    font-size: 1em!important;
-} */
 
 .action-container .quantity{
     font-size: var(--cart-p-font);

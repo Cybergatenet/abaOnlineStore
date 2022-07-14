@@ -1,24 +1,11 @@
 :root{
     --white: #fff;
     --color: #030e12;
-    --bg-color: #bb0740;
-    --bg-color-light: #ff2d70;
-    /* --bg-color-main: #090685; */
     
     --shadow-dark-color: #d3dae7;
     --red: #ff0000;
     --btn-bg: #0a07bb; 
     --btn-hover-bg: #090685; 
-
-    /* --yellow: #b69307; */
-    /* --blue: #5bccf6; */
-    /* --thick-blue: #37c0f1; */
-    /* --main-bg-color: #ecf0f3; */
-    /* --light-yellow: #f7c606; */
-    /* --main-yellow: #d1a806; */
-    /* --main-yellow: #c7a005; */
-    /* --font: Lapidary333 BT; */
-
 }
 
 body{
@@ -33,10 +20,14 @@ header{
     position: fixed;
 }
 
+.logo a{
+    text-decoration: none;
+    text-decoration: none!important;
+}
+
 .Menu .logo h1{
-    font-family: roboto;
     font-size: 0.7em;
-    color: var(--bg-color-main);
+    letter-spacing: 2px;
 }
 
 /* .Menu .logo h1::first-letter{ */
@@ -49,10 +40,10 @@ h1::first-letter{
     transition: 0.5s;
     font-size: 0.4em;
     position: relative;
-    font-family: roboto;
     text-decoration: none;
 }
 
+/* LOGIN BTN STYLING  */
 .Menu  nav .login{
     color: var(--white)!important;
     background: var(--btn-bg);
@@ -60,15 +51,15 @@ h1::first-letter{
 
 .Menu  nav .login:hover{
     color: var(--white)!important;
-    background: var(--btn-hover-bg);
 }
 
 .Menu .navlink{
-    color: #000!important;
+    transition: 0.5s;
+    color: var(--color)!important;
 }
 
 .Menu .navlink:hover{
-    transform: scale(1.3);
+    letter-spacing: 2px;
     color: var(--btn-hover-bg)!important;
 }
 
@@ -79,7 +70,7 @@ h1::first-letter{
 
 
 
-
+/* NAVBAR MEDIA QUERY  */
 @media(max-width: 1206px) {
     .menu-icon{
         display: block;
@@ -88,10 +79,12 @@ h1::first-letter{
     .nav{
         right: 0%;
         top: 100%;
-        width: 70%;
+        width: 70vw;
         transition: 0.5s;
         position: absolute;
-        background: var(--color);
+        background: var(--white);
+        border-top: 0!important;
+        border: 1px solid #999;
         flex-direction: column!important;
         align-items: flex-start!important;
     }
@@ -102,7 +95,13 @@ h1::first-letter{
     
     .Menu .navlink{
         font-size: 0.7em;
-        margin: 0.6em 1em!important;
+        margin: 0.6em 0!important;
+        width: 100%;
     }
-    
+
+    .Menu .navlink:hover{
+        background: #333;
+        color: var(--white)!important;
+    }
+
 }

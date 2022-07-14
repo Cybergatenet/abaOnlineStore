@@ -5,8 +5,9 @@ dotenv.config()
 const dbcon = mySQL.createConnection({
     host: process.env.HOST || "localhost",
     user: process.env.USER || "root",
-    password: process.env.PASSWORD || "123456",
+    password: process.env.PASSWORD || "",
     database: process.env.DB_NAME || "naprimastore"
+ 
 })
 
 dbcon.connect((err, response) => {
