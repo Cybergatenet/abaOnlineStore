@@ -54,7 +54,7 @@ h1::first-letter{
 }
 
 .Menu .navlink{
-    transition: 0.3s;
+    transition: 0.5s;
     color: var(--color)!important;
 }
 
