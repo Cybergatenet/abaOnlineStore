@@ -13,7 +13,6 @@ const session = require('express-session')
 // app.use(session({
 //     secret: sessionID,
 //     resave: false,
-    
 // }))
 
 // Import DB connection
@@ -129,7 +128,6 @@ app.post('/api/delete/product/:id', (req, res) => {
         if(result){
             res.json(result)
             console.log(result)
-            // res.json({data: ['Hello', 'World']})
         }
     })
 })
